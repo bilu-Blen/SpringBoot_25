@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org" xmlns:sec="www.thymeleaf.org/extras/spring-security">
+<head th:replace="base :: headstuff">
+
+</head>
+<body>
+    <nav th:replace="base :: navbar"></nav>
+
+    <div class="contanier">
+        <div class="jumbotron">
+            <h1>Hello, Wolrd!</h1>
+            <p>....</p>
+            <p><a class="btn btn-primary btn-lg" href="/secure" role="button">Go to Secure</a></p>
+        </div>
+    </div>
+
+    <nav th:replace="base :: footer"></nav>
+    <th:block th:replace="base :: jslinks" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+
+        </script>
+        <script src="/js/bootstrap.js"></script>
+    </th:block>
+
+</body>
+</html>
